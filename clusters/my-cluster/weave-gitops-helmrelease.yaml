@@ -15,5 +15,7 @@ spec:
   values:
     additionalArgs:
     - --insecure
+    adminUser:
+      create: true
     rbac:
       create: true

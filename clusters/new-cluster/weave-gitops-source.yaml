@@ -3,7 +3,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
   name: ww-gitops
-  namespace: flux-system
+  namespace: test
 spec:
   interval: 1m0s
   url: https://helm.gitops.weave.works

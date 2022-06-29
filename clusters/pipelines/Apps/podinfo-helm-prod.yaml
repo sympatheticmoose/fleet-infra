@@ -16,7 +16,7 @@ spec:
         namespace: flux-system
       version: '6.1.0'
   interval: 1m0s
-  releaseName: podinfo
+  releaseName: podinfo-prod
   values:
     replicaCount: 2
     resources:

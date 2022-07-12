@@ -19,4 +19,4 @@ spec:
       passwordHash: $2a$10$2KwJlhVF5aoPIg4MDkjTu.YiREI5o453NSmKf3U6J3N3DAQUM/mAS
       username: admin
     image:
-      tag: "0.9.0-rc.1"
+      tag: "0.9.0"

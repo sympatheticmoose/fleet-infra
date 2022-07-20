@@ -4,3 +4,4 @@ namespace: test
 resources:
 - namespace.yaml
 - deployment.yaml
+- canary.yaml

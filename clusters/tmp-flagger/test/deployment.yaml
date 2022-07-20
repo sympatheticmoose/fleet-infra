@@ -76,7 +76,7 @@ spec:
             memory: 64Mi
 
 ---
-apiVersion: autoscaling/v1
+apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
   name: podinfo

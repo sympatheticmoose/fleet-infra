@@ -1,0 +1,5 @@
+adminUser:
+  create: true
+  username: admin
+  passwordHash: $2a$10$FZaf2TgYwDNW.FoUZX0XYuzAloqEP16gd/ZeunXWyq8Os1ZMeM542
+listOCIRepositories: true

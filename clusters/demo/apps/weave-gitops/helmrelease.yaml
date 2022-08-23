@@ -19,4 +19,6 @@ spec:
       passwordHash: $2a$10$FZaf2TgYwDNW.FoUZX0XYuzAloqEP16gd/ZeunXWyq8Os1ZMeM542
       username: admin
     listOCIRepositories: true
+    image:
+      tag: 0.9.3-patch.1
 

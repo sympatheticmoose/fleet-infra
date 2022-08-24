@@ -11,3 +11,4 @@ spec:
     kind: OCIRepository
     name: podinfo
   path: ./
+  prune: true

@@ -20,5 +20,5 @@ spec:
       username: admin
     listOCIRepositories: true
     image:
-      tag: 0.9.3-patch.1
+      tag: 0.9.4
 

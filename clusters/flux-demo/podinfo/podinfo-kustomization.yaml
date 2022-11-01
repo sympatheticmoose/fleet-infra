@@ -12,4 +12,5 @@ spec:
     kind: OCIRepository
     name: podinfo
     namespace: infra
+  targetNamespace: podinfo
 

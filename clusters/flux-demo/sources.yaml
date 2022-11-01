@@ -6,7 +6,7 @@ metadata:
   namespace: infra
 spec:
   interval: 1m0s
-  path: ./Infra
+  path: ./clusters/flux-demo/Infra
   prune: false
   sourceRef:
     kind: GitRepository

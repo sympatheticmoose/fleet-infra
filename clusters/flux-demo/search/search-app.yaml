@@ -1,0 +1,16 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: search-app
+  namespace: search
+spec:
+  interval: 1m0s
+  path: ./deploy/overlays/webapp
+  prune: false
+  sourceRef:
+    kind: GitRepository
+    name: apps
+    namespace: infra
+  targetNamespace: search
+

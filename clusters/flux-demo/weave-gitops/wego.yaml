@@ -29,7 +29,6 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: ww-gitops
-      version: "4.0.4"
   interval: 1h0m0s
   values:
     adminUser:

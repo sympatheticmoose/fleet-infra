@@ -7,6 +7,9 @@ webhooks:
   objectSelector:
     matchLabels:
       foo: bar
+  sideEffects: none
+  clientConfig: my-webhook.example.com
+  admissionReviewVersions: v1
   rules:
   - operations: ["CREATE"]
     apiGroups: ["*"]

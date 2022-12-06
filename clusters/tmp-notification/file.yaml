@@ -8,7 +8,7 @@ metadata:
   namespace: flux-system
 spec:
   address: http://https://myorg.com/default/blag/blag
-  secretRef: null
+  secretRef:
   type: generic
 
 ---

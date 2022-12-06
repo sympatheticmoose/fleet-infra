@@ -8,7 +8,7 @@ metadata:
   namespace: flux-system
 spec:
   address: http://blah/default/podinfo/dev
-  secretRef: 
+  secretRef: {}
   type: generic
 
 ---

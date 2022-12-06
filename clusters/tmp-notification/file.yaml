@@ -4,11 +4,11 @@ metadata:
   labels:
     templates.weave.works/template-name: pipeline-notification-resources
     templates.weave.works/template-namespace: default
-  name: name
+  name: podinfo
   namespace: flux-system
 spec:
-  address: http://https://myorg.com/default/blag/blag
-  secretRef:
+  address: http://blah/default/podinfo/dev
+  secretRef: null
   type: generic
 
 ---
@@ -18,16 +18,16 @@ metadata:
   labels:
     templates.weave.works/template-name: pipeline-notification-resources
     templates.weave.works/template-namespace: default
-  name: name
+  name: podinfo
   namespace: flux-system
 spec:
   eventSeverity: info
   eventSources:
   - kind: HelmRelease
-    name: name
+    name: podinfo
   exclusionList:
   - .*upgrade.*has.*started
   - .*is.*not.*ready
   - ^Dependencies.*
   providerRef:
-    name: name
+    name: podinfo

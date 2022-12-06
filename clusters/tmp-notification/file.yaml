@@ -1,0 +1,33 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Provider
+metadata:
+  labels:
+    templates.weave.works/template-name: pipeline-notification-resources
+    templates.weave.works/template-namespace: default
+  name: name
+  namespace: flux-system
+spec:
+  address: http://https://myorg.com/default/blag/blag
+  secretRef: null
+  type: generic
+
+---
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Alert
+metadata:
+  labels:
+    templates.weave.works/template-name: pipeline-notification-resources
+    templates.weave.works/template-namespace: default
+  name: name
+  namespace: flux-system
+spec:
+  eventSeverity: info
+  eventSources:
+  - kind: HelmRelease
+    name: name
+  exclusionList:
+  - .*upgrade.*has.*started
+  - .*is.*not.*ready
+  - ^Dependencies.*
+  providerRef:
+    name: name
